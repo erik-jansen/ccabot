@@ -1,0 +1,371 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "CCABot",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "AddToOrder"
+    },
+    {
+      "name": "DriverETA"
+    },
+    {
+      "name": "FixFridge"
+    },
+    {
+      "name": "GetRecommendation"
+    },
+    {
+      "name": "GetSpecials"
+    },
+    {
+      "name": "Help"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "ScheduleDelivery"
+    }
+  ],
+  "entities": [
+    {
+      "name": "ItemSize"
+    },
+    {
+      "name": "PackageSize"
+    },
+    {
+      "name": "productId"
+    },
+    {
+      "name": "ProductName"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [
+    "datetimeV2",
+    "number"
+  ],
+  "actions": [],
+  "model_features": [
+    {
+      "name": "ItemSize",
+      "mode": true,
+      "words": "1000ML,1250ML,150ML,1500ML,175ML,200ML,2000ML,250ML,275ML,300ML,330ML,350ML,355ML,375ML,385ML,390ML,400ML,450ML,465ML,500ML,5000ML,550ML,600ML,700ML,750ML",
+      "activated": true
+    },
+    {
+      "name": "PackageSize",
+      "mode": true,
+      "words": "1 pack,12 pack,3 pack,6 pack,24 pack,30 pack,4 pack,5 pack,10 pack,8 pack,18 pack,2 pack,6 packs,four pack,100 pack,3pk,20 pack,2pk,10pk,50 pack,4pk,4 packs,multi pack,6pk,two pack,5pk,multipack,12pk,8pk,50pk,4pack,3pack,4 pk,25pk,24pk,25 pack",
+      "activated": true
+    },
+    {
+      "name": "ProductName",
+      "mode": true,
+      "words": "ARKADIA,BARISTA BROS,BISLERI,BOSTON LAGER,CASCADE,COCA - COLA,COCA - COLA LIFE,COCA - COLA NO SUGAR,COCA - COLA WITH STEVIA,COKE ZERO,DEEP SPRING MINERAL WATER,DIET COKE,DIET COKE C / F,DIET COKE WITH VANILLA,FANTA,FANTA FLAVOURS,FANTA ZERO,FRUIT BOX,FUZE,GLACEAU,GLACEAU SMARTWATER,GOULBURN VALLEY EVERYDAY,GOULBURN VALLEY FRUITY DRINK,GOULBURN VALLEY PERFECT FRUIT,GOULBURN VALLEY PREMIUM CHILLED,GRINDERS CHOCOLATE,KERI,KIRKS FLAVOURS,KIRKS MIXERS,KIRKS SUGAR FREE,LIFT,MONSTER,MOTHER,MT FRANKLIN LIGHTLY SPARKLING,MT FRANKLIN LIGHTLY SPARKLING FLAVOURS,MT FRANKLIN STILL,NEVERFAIL,PEATS RIDGE,PICCADILLY,POWERADE,POWERADE ZERO,PUMP,PUMP FLAVOURS,SPRITE,SPRITE ZERO,TABOO,TEMPLE,TISER,VANILLA COKE,ZICO,coke,cola",
+      "activated": true
+    }
+  ],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "i need help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "help me",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "can you help me",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "my fridge is broken",
+      "intent": "FixFridge",
+      "entities": []
+    },
+    {
+      "text": "what are the specials",
+      "intent": "GetSpecials",
+      "entities": []
+    },
+    {
+      "text": "the specials",
+      "intent": "GetSpecials",
+      "entities": []
+    },
+    {
+      "text": "give me the recommendations for d6pxkp",
+      "intent": "GetRecommendation",
+      "entities": [
+        {
+          "entity": "productId",
+          "startPos": 32,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "what do people buy who buy d6pxkp",
+      "intent": "GetRecommendation",
+      "entities": [
+        {
+          "entity": "productId",
+          "startPos": 27,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "when is my delivery scheduled?",
+      "intent": "DriverETA",
+      "entities": []
+    },
+    {
+      "text": "when is my driver arriving?",
+      "intent": "DriverETA",
+      "entities": []
+    },
+    {
+      "text": "give me recommendations for d3c2kl",
+      "intent": "GetRecommendation",
+      "entities": [
+        {
+          "entity": "productId",
+          "startPos": 28,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "give me recommendations for d5pxbbc",
+      "intent": "GetRecommendation",
+      "entities": [
+        {
+          "entity": "productId",
+          "startPos": 28,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "what do you recommend for d3c2kl",
+      "intent": "GetRecommendation",
+      "entities": [
+        {
+          "entity": "productId",
+          "startPos": 26,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "when is my driver coming",
+      "intent": "DriverETA",
+      "entities": []
+    },
+    {
+      "text": "when is my driver",
+      "intent": "DriverETA",
+      "entities": []
+    },
+    {
+      "text": "what are recommendations for d1pxcns",
+      "intent": "GetRecommendation",
+      "entities": [
+        {
+          "entity": "productId",
+          "startPos": 29,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "can you give me recommendations for d1pxcns",
+      "intent": "GetRecommendation",
+      "entities": [
+        {
+          "entity": "productId",
+          "startPos": 36,
+          "endPos": 42
+        }
+      ]
+    },
+    {
+      "text": "what did people buy who bought d5pxbbc",
+      "intent": "GetRecommendation",
+      "entities": [
+        {
+          "entity": "productId",
+          "startPos": 31,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "where is my driver",
+      "intent": "DriverETA",
+      "entities": []
+    },
+    {
+      "text": "when does my driver arrive",
+      "intent": "DriverETA",
+      "entities": []
+    },
+    {
+      "text": "where's my chauffeur",
+      "intent": "DriverETA",
+      "entities": []
+    },
+    {
+      "text": "or is my driver",
+      "intent": "DriverETA",
+      "entities": []
+    },
+    {
+      "text": "what are this weeks specials",
+      "intent": "GetSpecials",
+      "entities": []
+    },
+    {
+      "text": "can you tell me the specials",
+      "intent": "GetSpecials",
+      "entities": []
+    },
+    {
+      "text": "send someone to fix my fridge",
+      "intent": "FixFridge",
+      "entities": []
+    },
+    {
+      "text": "send someone over, my fridge is broken",
+      "intent": "FixFridge",
+      "entities": []
+    },
+    {
+      "text": "change my deliverytime to 3 november",
+      "intent": "ScheduleDelivery",
+      "entities": []
+    },
+    {
+      "text": "reschedule my delivery to 2 december",
+      "intent": "ScheduleDelivery",
+      "entities": []
+    },
+    {
+      "text": "schedule my delivery for 29 october",
+      "intent": "ScheduleDelivery",
+      "entities": []
+    },
+    {
+      "text": "can you dispatch field repair",
+      "intent": "FixFridge",
+      "entities": []
+    },
+    {
+      "text": "reschedule my delivery to 5 december",
+      "intent": "ScheduleDelivery",
+      "entities": []
+    },
+    {
+      "text": "could you do a recommendation for d5pxga",
+      "intent": "GetRecommendation",
+      "entities": [
+        {
+          "entity": "productId",
+          "startPos": 34,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "what is recommended for d5pxgp",
+      "intent": "GetRecommendation",
+      "entities": [
+        {
+          "entity": "productId",
+          "startPos": 24,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "what is a recommendation for d1pxcns",
+      "intent": "GetRecommendation",
+      "entities": [
+        {
+          "entity": "productId",
+          "startPos": 29,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "what are the recommendations for d1pxcns",
+      "intent": "GetRecommendation",
+      "entities": [
+        {
+          "entity": "productId",
+          "startPos": 33,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "add 3 24 pack 375ml coca-cola to my order",
+      "intent": "AddToOrder",
+      "entities": [
+        {
+          "entity": "PackageSize",
+          "startPos": 6,
+          "endPos": 12
+        },
+        {
+          "entity": "ItemSize",
+          "startPos": 14,
+          "endPos": 18
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 20,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "add 14 24 pack 450ml sprite to my order",
+      "intent": "AddToOrder",
+      "entities": [
+        {
+          "entity": "PackageSize",
+          "startPos": 7,
+          "endPos": 13
+        },
+        {
+          "entity": "ItemSize",
+          "startPos": 15,
+          "endPos": 19
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 21,
+          "endPos": 26
+        }
+      ]
+    }
+  ]
+}
